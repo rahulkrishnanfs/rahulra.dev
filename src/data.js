@@ -24,15 +24,16 @@ export const profile = {
 }
 
 export const about = [
-  'Rahulkrishnan R A is an Assistant Vice President at Barclays and a Senior Platform Engineer based in Northamptonshire, UK. With a strong background in cloud-native infrastructure and platform engineering, he specializes in building scalable, secure, and reliable systems within complex enterprise environments.',
-  'Rahul is an active open-source contributor and a passionate community builder. He is building the Cursor community in Northampton and across the UK, and is helping grow the OpenUK community — organizing and leading hackathons and meetups to foster innovation and collaboration.',
-  'He is particularly focused on Agentic AI and intelligent automation, developing systems that enhance productivity and real-world impact. As a tech conference speaker, he shares insights on AI-driven platforms and responsible technology adoption.',
+  'Rahulkrishnan R A is an Assistant Vice President at Barclays and a Senior Platform Engineer based in Northamptonshire, UK. He is a Cursor Ambassador for the UK developer community, an OpenUK 2026 Honouree, and an active open-source contributor across impactful projects including Debian, Kubernetes and OpenEBS.',
+  'Rahul is deeply passionate about GenAI and Agentic AI — exploring how modern LLMs, context engineering and agentic workflows can transform developer experience and accelerate real-world innovation. He continually experiments with next-generation developer tools and AI-assisted automation to push the boundaries of what teams can build.',
+  'With a strong background in DevOps, platform engineering, automation and modern infrastructure, he helps organizations improve their software development lifecycle with scalable practices and high-impact tooling. He is building the Cursor community in Northampton and across the UK, and helping grow the OpenUK community through hackathons and meetups.',
+  'He embraces DevOps culture, contributes to the open-source ecosystem, and regularly shares his knowledge as a blogger, speaker and community builder. He writes code in Golang, Python and beyond — always driven by a mission to simplify complex technologies and empower developers to work better, faster and smarter.',
 ]
 
 export const stats = [
-  { num: '10+', label: 'Years in Platform Engineering' },
+  { num: '13+', label: 'Years in Platform Engineering' },
   { num: 'OSS', label: 'Debian · Kubernetes · OpenEBS' },
-  { num: '50+', label: 'Talks & Sessions' },
+  { num: '25+', label: 'Talks & Sessions' },
   { num: '2026', label: 'OpenUK Honouree' },
 ]
 
