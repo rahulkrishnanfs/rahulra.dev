@@ -1,12 +1,13 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import { profile } from '../data'
 import profileImg from '../assets/profile-sketch.png'
+import citySketch from '../assets/city-sketch.png'
 
 export default function Hero() {
   return (
     <header id="home" className="hero">
       <Container>
-        <Row className="align-items-center g-5">
+        <Row className="align-items-end g-5">
           <Col lg={6}>
             <span className="honour-badge">
               <i className="bi bi-award-fill"></i> {profile.honour} 🏅
@@ -45,6 +46,7 @@ export default function Hero() {
           <Col lg={6}>
             <div className="hero-visual">
               <div className="hero-glow-ring"></div>
+              <img src={citySketch} alt="" aria-hidden="true" className="hero-city-backdrop" />
               <div className="portrait-sketch-wrap">
                 <img
                   src={profileImg}

@@ -15,9 +15,14 @@ export default function Contact() {
             Whether it’s platform engineering, DevOps, GenAI or a speaking opportunity —
             I’d love to hear from you.
           </p>
-          <a href={`mailto:${profile.email}`} className="btn btn-glow mb-4">
-            <i className="bi bi-envelope-fill me-2"></i>{profile.email}
-          </a>
+          <div className="contact-actions mb-4">
+            <a href={`mailto:${profile.email}`} className="btn btn-glow">
+              <i className="bi bi-envelope-fill me-2"></i>{profile.email}
+            </a>
+            <a href={profile.calendly} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-coffee">
+              <i className="bi bi-cup-hot-fill me-2"></i>Book a coffee chat
+            </a>
+          </div>
           <Row className="justify-content-center mt-2">
             <Col xs="auto">
               <div className="social-row justify-content-center">

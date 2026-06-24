@@ -25,6 +25,22 @@ const captions = [
   'Tech community social',
   'Recognised at Barclaycard',
   'Kubernetes Meetup, Chennai',
+  'Hosting the Cursor Northampton Hackathon',
+  'Speaking at COEP FOSSMeet ’18, Pune',
+  'On stage at an AWS community event',
+  'OpenEBS talk — cloud-native storage',
+  'Cursor Hackathon featured in the Northampton Chronicle',
+  'Docker 101 workshop — Innovia 2k18',
+  'Introduction to Kubernetes — COEP FOSSMeet ’21',
+  'Cursor Hackathon featured in the Northamptonshire Telegraph',
+  'Cursor Hackathon at the University of Northampton',
+  'The Cursor Northampton volunteer team',
+  'Celebrating the winners — Cursor Hackathon',
+  'Memory Engineering for AI Agents — main stage',
+  'Speaking alongside LangChain at MongoDB.local',
+  'Memory Engineering talk — Daventry Coding Club',
+  'Context Engineering & tool calling — live demo',
+  'With the community at MongoDB.local',
 ]
 
 const images = Object.keys(modules)

@@ -14,6 +14,7 @@ export const profile = {
     'Helping organizations accelerate their software development lifecycle through modern DevOps practices, automation, and intelligent agent development.',
   honour: 'OpenUK 2026 Honour',
   email: 'rahulkrishnanfs@gmail.com',
+  calendly: 'https://calendly.com/rahulkrishnanfs',
   socials: [
     { icon: 'bi-linkedin', label: 'LinkedIn', url: 'https://www.linkedin.com/in/rahulkrishnanra/' },
     { icon: 'bi-github', label: 'GitHub', url: 'https://github.com/rahulkrishnanfs' },

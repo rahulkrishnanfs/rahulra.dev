@@ -247,6 +247,31 @@ a {
   box-shadow: 0 14px 36px rgba(255, 255, 255, 0.3);
 }
 
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-coffee {
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-weight: 700;
+  padding: 0.7rem 1.5rem;
+  border-radius: 12px;
+  background: transparent;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-coffee:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
 .btn-outline-soft {
   background: transparent;
   border: 1px solid var(--border);
@@ -277,6 +302,20 @@ a {
   z-index: 0;
 }
 
+.hero-city-backdrop {
+  position: absolute;
+  z-index: 0;
+  width: 135%;
+  max-width: none;
+  left: 50%;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  opacity: 0.22;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 55%, transparent 85%);
+  mask-image: radial-gradient(ellipse at center, #000 55%, transparent 85%);
+}
+
 .honour-image {
   position: relative;
   z-index: 1;
@@ -294,6 +333,15 @@ a {
   max-width: 460px;
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .hero-visual {
+    justify-content: flex-end;
+  }
+  .portrait-sketch-wrap {
+    margin-right: -14%;
+  }
 }
 
 .portrait-sketch {
@@ -501,12 +549,12 @@ a {
 .recognition-img {
   width: 100%;
   display: block;
-  filter: grayscale(1) contrast(1.05);
+  filter: contrast(1.03);
   transition: filter 0.3s ease;
 }
 
 .recognition-card:hover .recognition-img {
-  filter: grayscale(1) contrast(1.12) brightness(1.05);
+  filter: contrast(1.06) brightness(1.04);
 }
 
 /* ---------- Certifications ---------- */
