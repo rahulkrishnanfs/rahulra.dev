@@ -9,6 +9,7 @@ import elevateAiContextImg from './assets/elevate-ai-context-engineering.png'
 import toastmastersLogoImg from './assets/toastmasters-logo.png'
 import barclaysDeveloperDayImg from './assets/barclays-developer-day.png'
 import mongodbLanggraphImg from './assets/mongodb-langgraph.png'
+import podcastAppearanceImg from './assets/podcast-appearance.png'
 
 export const profile = {
   name: 'Rahulkrishnan R A',
@@ -155,7 +156,7 @@ export const community = [
     text: 'Sharing the journey of building an AI developer community and working with agentic AI.',
     link: 'https://youtu.be/1UME77yS0Fo',
     linkLabel: 'Watch',
-    thumb: 'https://img.youtube.com/vi/1UME77yS0Fo/hqdefault.jpg',
+    thumb: podcastAppearanceImg,
     playable: true,
   },
   {
