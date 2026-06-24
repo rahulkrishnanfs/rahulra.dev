@@ -17,9 +17,15 @@ export default function Leadership() {
           {leadership.map((l, i) => (
             <Col md={6} lg={4} key={l.role}>
               <Reveal className="lead-card" delay={(i % 3) * 80}>
-                <span className="lead-icon">
-                  <i className={`bi ${l.icon}`}></i>
-                </span>
+                {l.logo ? (
+                  <span className="lead-icon lead-icon-logo">
+                    <img src={l.logo} alt={`${l.org} logo`} loading="lazy" />
+                  </span>
+                ) : (
+                  <span className="lead-icon">
+                    <i className={`bi ${l.icon}`}></i>
+                  </span>
+                )}
                 <div>
                   <h3 className="h6 fw-bold mb-1">{l.role}</h3>
                   <p className="text-muted-2 mb-0" style={{ fontSize: '0.88rem' }}>

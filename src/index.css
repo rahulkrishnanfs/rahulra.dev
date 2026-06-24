@@ -444,6 +444,42 @@ a {
   margin-bottom: 1rem;
 }
 
+.os-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 0 14px;
+  border-radius: 14px;
+  background: #fff;
+  margin-bottom: 1rem;
+}
+
+.os-logo img {
+  height: 26px;
+  width: auto;
+  display: block;
+}
+
+.os-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 92px;
+  height: 92px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  margin-bottom: 1rem;
+}
+
+.os-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .stat-num {
   font-size: 2.2rem;
   font-weight: 800;
@@ -627,6 +663,19 @@ a {
   font-size: 1.2rem;
 }
 
+.lead-icon-logo {
+  background: #fff;
+  overflow: hidden;
+  padding: 4px;
+}
+
+.lead-icon-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
 /* ---------- Speaking ---------- */
 .talk-card {
   background: linear-gradient(160deg, var(--bg-panel), var(--bg-panel-2));
@@ -734,6 +783,37 @@ a {
   width: 52px;
   height: 52px;
   font-size: 1.4rem;
+}
+
+.talk-photo {
+  flex: 1;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  aspect-ratio: 4 / 3;
+}
+
+.talk-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(1.03) brightness(0.92);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.talk-photo:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.talk-photo:hover img {
+  filter: contrast(1.05) brightness(1);
+  transform: scale(1.04);
+}
+
+.talk-card .talk-photo {
+  max-width: 260px;
+  margin-top: 0.25rem;
 }
 
 /* ---------- Gallery ---------- */

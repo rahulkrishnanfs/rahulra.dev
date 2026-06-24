@@ -56,6 +56,15 @@ export default function Speaking() {
                     <i className="bi bi-play-fill"></i>
                   </span>
                 </a>
+                {featured.gallery && (
+                  <div className="d-flex gap-2 mt-2">
+                    {featured.gallery.map((g) => (
+                      <a key={g.src} href={g.src} target="_blank" rel="noreferrer" className="talk-photo">
+                        <img src={g.src} alt={g.alt} loading="lazy" />
+                      </a>
+                    ))}
+                  </div>
+                )}
               </Col>
             </Row>
           </Reveal>
@@ -72,10 +81,15 @@ export default function Speaking() {
                   <span className="talk-meta">{s.meta}</span>
                 </div>
                 <h3 className="h6 fw-bold mb-1">{s.event}</h3>
-                <p className="text-muted-2 mb-0" style={{ fontSize: '0.9rem' }}>
+                <p className="text-muted-2 mb-2" style={{ fontSize: '0.9rem' }}>
                   <i className="bi bi-chevron-right me-1" style={{ fontSize: '0.7rem' }}></i>
                   {s.title}
                 </p>
+                {s.photo && (
+                  <a href={s.photo} target="_blank" rel="noreferrer" className="talk-photo">
+                    <img src={s.photo} alt={`${s.event} — ${s.title}`} loading="lazy" />
+                  </a>
+                )}
               </>
             )
             return (

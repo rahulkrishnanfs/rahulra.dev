@@ -1,6 +1,14 @@
 import nliveRadioImg from './assets/nlive-radio.png'
 import cursorDaventryImg from './assets/cursor-daventry-meetup.png'
 import cursorHackathonImg from './assets/cursor-hackathon.png'
+import mongodbTalkStageImg from './assets/mongodb-talk-stage.png'
+import mongodbTalkSpeakersImg from './assets/mongodb-talk-speakers.png'
+import debianLogoImg from './assets/debian-logo.png'
+import cursorNorthamptonLogoImg from './assets/cursor-northampton-logo.png'
+import elevateAiContextImg from './assets/elevate-ai-context-engineering.png'
+import toastmastersLogoImg from './assets/toastmasters-logo.png'
+import barclaysDeveloperDayImg from './assets/barclays-developer-day.png'
+import mongodbLanggraphImg from './assets/mongodb-langgraph.png'
 
 export const profile = {
   name: 'Rahulkrishnan R A',
@@ -25,6 +33,7 @@ export const profile = {
     { icon: 'bi-twitter-x', label: 'X', url: 'https://x.com/rahulkrishnanra' },
     { icon: 'bi-medium', label: 'Blog', url: 'https://medium.com/@rahulkrishnanfs' },
     { icon: 'bi-easel2-fill', label: 'SpeakerDeck', url: 'https://speakerdeck.com/rahulkrishnanfs' },
+    { icon: 'bi-person-video3', label: 'Sessionize', url: 'https://sessionize.com/rahulkrishnanra/' },
   ],
 }
 
@@ -93,7 +102,7 @@ export const leadership = [
   { icon: 'bi-cursor-fill', role: 'Cursor Ambassador', org: 'Cursor — building the AI dev community' },
   { icon: 'bi-flag-fill', role: 'OpenUK Ambassador', org: 'OpenUK' },
   { icon: 'bi-award-fill', role: 'Recognised in OpenUK Honours List 2026', org: 'OpenUK' },
-  { icon: 'bi-mic-fill', role: 'Vice President (PR)', org: 'Northampton Speakers — Toastmasters Club' },
+  { icon: 'bi-mic-fill', logo: toastmastersLogoImg, role: 'Vice President — Public Relations', org: 'Northampton Speakers Club — Toastmasters International' },
   { icon: 'bi-mortarboard-fill', role: 'Career Mentor', org: 'Code Your Future' },
   { icon: 'bi-people-fill', role: 'Past Organizer — Kubernetes Meetup', org: 'CNCF Community · engaging 100+ engineers' },
 ]
@@ -106,12 +115,16 @@ export const speaking = [
     featured: true,
     link: 'https://web.cvent.com/event/e2f806d5-42b5-4858-b993-76502f7fae5f/websitePage:dd8ce793-265b-4455-b826-1857079f87c7',
     recording: 'https://www.youtube.com/watch?v=GIhtQaxhwAc&list=PL4RCxklHWZ9tH01MTlChYwUqN8Cm2tl2r&index=18&t=1011s',
+    gallery: [
+      { src: mongodbTalkStageImg, alt: 'Rahulkrishnan R A presenting on agent memory at MongoDB.local London' },
+      { src: mongodbTalkSpeakersImg, alt: 'MongoDB.local London speakers slide featuring Rahulkrishnan R A' },
+    ],
     summary:
       'Discover how AI agents use memory to reason, adapt, and behave consistently, plus practical insights on designing stateful systems at scale.',
   },
-  { event: 'MongoDB.local Conference', meta: 'London · 2026', title: 'LangGraph + MongoDB' },
-  { event: 'Elevate AI Northampton', meta: '2026', title: 'Context Engineering' },
-  { event: 'Developer Day at Barclays', meta: '2026', title: 'Internal Developer Experience' },
+  { event: 'MongoDB.local Conference', meta: 'London · 2026', title: 'LangGraph + MongoDB', photo: mongodbLanggraphImg },
+  { event: 'Elevate AI Northampton', meta: '2026', title: 'Context Engineering', photo: elevateAiContextImg },
+  { event: 'Developer Day at Barclays', meta: '2026', title: 'Internal Developer Experience', photo: barclaysDeveloperDayImg },
   { event: 'Docker & Kubernetes Meetups', meta: '2017', title: 'Containers & Orchestration' },
   { event: 'Mini Debian Conference', meta: '2016', title: 'Open Source & Debian' },
 ]
@@ -168,6 +181,7 @@ export const community = [
 export const opensource = [
   {
     icon: 'bi-cursor-fill',
+    avatar: cursorNorthamptonLogoImg,
     title: 'Cursor Community, Northampton',
     text: 'Managing and running the local Cursor community — influencing developers, AI enthusiasts and entrepreneurs.',
     link: 'https://cursor-northampton.vercel.app/',
@@ -180,7 +194,10 @@ export const opensource = [
   },
   {
     icon: 'bi-box-seam-fill',
+    logo: debianLogoImg,
     title: 'Debian Community',
     text: 'Contributed to the Debian community, packaging applications for the distribution.',
+    link: 'https://qa.debian.org/developer.php?login=rahulkrishnanfs%40gmail.com',
+    linkLabel: 'View Debian profile',
   },
 ]

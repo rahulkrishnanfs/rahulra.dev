@@ -17,9 +17,19 @@ export default function OpenSource() {
           {opensource.map((o, i) => (
             <Col md={6} lg={4} key={o.title}>
               <Reveal className="glass-card" delay={(i % 3) * 80}>
-                <span className="card-icon">
-                  <i className={`bi ${o.icon}`}></i>
-                </span>
+                {o.avatar ? (
+                  <span className="os-avatar">
+                    <img src={o.avatar} alt={`${o.title} logo`} loading="lazy" />
+                  </span>
+                ) : o.logo ? (
+                  <span className="os-logo">
+                    <img src={o.logo} alt={`${o.title} logo`} loading="lazy" />
+                  </span>
+                ) : (
+                  <span className="card-icon">
+                    <i className={`bi ${o.icon}`}></i>
+                  </span>
+                )}
                 <h3 className="h5 fw-bold">{o.title}</h3>
                 <p className="text-muted-2" style={{ fontSize: '0.94rem' }}>
                   {o.text}
