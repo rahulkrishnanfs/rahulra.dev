@@ -11,9 +11,9 @@
   --text-muted: #8c8c95;
   --border: rgba(255, 255, 255, 0.12);
   --shadow: 0 22px 60px rgba(0, 0, 0, 0.75);
-  --green: #00c16e;
-  --green-strong: #00d97a;
-  --green-soft: rgba(0, 193, 110, 0.14);
+  --green: #b6f23c;
+  --green-strong: #ccf86f;
+  --green-soft: rgba(182, 242, 60, 0.16);
 }
 
 * {
@@ -88,6 +88,20 @@ a {
   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   margin-bottom: 1rem;
   letter-spacing: -0.02em;
+  color: var(--green);
+}
+
+/* Green headings across the site */
+.glass-card h3,
+.glass-card h5,
+.recognition-card h3,
+.cert-card h3,
+.lead-card h3,
+.talk-card h3,
+.featured-talk h3,
+.community-banner-title,
+.hero-name {
+  color: var(--green);
 }
 
 .text-muted-2 {
@@ -104,7 +118,7 @@ a {
 }
 
 .gradient-text {
-  background: linear-gradient(100deg, #ffffff 0%, #bdbdc4 60%, #8c8c94 100%);
+  background: linear-gradient(100deg, #ccf86f 0%, #b6f23c 55%, #7fc91f 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -256,22 +270,22 @@ a {
 }
 
 .btn-glow {
-  background: #ffffff;
+  background: var(--green);
   border: none;
-  color: #0a0a0a;
+  color: #08130a;
   font-weight: 700;
   padding: 0.7rem 1.6rem;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.18);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 10px 30px rgba(182, 242, 60, 0.22);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .btn-glow:hover,
 .btn-glow:focus-visible {
   transform: translateY(-2px);
-  background: var(--green);
-  color: #04110b;
-  box-shadow: 0 14px 36px var(--green-soft);
+  background: var(--green-strong);
+  color: #08130a;
+  box-shadow: 0 16px 40px rgba(182, 242, 60, 0.34);
 }
 
 .contact-actions {
@@ -283,13 +297,13 @@ a {
 }
 
 .btn-coffee {
-  border: 1px solid var(--border);
-  color: var(--text);
+  border: 1px solid rgba(182, 242, 60, 0.5);
+  color: var(--green);
   font-weight: 700;
   padding: 0.7rem 1.5rem;
   border-radius: 12px;
   background: transparent;
-  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease, color 0.2s ease;
 }
 
 .btn-coffee:hover {
@@ -301,12 +315,12 @@ a {
 
 .btn-outline-soft {
   background: transparent;
-  border: 1px solid var(--border);
-  color: var(--text);
+  border: 1px solid rgba(182, 242, 60, 0.5);
+  color: var(--green);
   font-weight: 600;
   padding: 0.7rem 1.5rem;
   border-radius: 12px;
-  transition: border-color 0.2s ease, background 0.2s ease;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
 .btn-outline-soft:hover {
@@ -316,8 +330,8 @@ a {
 }
 
 .btn-outline-light {
-  border-color: var(--border);
-  color: var(--text);
+  border-color: rgba(182, 242, 60, 0.5);
+  color: var(--green);
 }
 
 .btn-outline-light:hover,
