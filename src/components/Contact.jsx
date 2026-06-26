@@ -23,8 +23,8 @@ export default function Contact() {
             <a href={`mailto:${profile.email}`} className="btn btn-glow">
               <i className="bi bi-envelope-fill me-2"></i>{profile.email}
             </a>
-            <a href={profile.calendly} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-coffee">
-              <i className="bi bi-cup-hot-fill me-2"></i>Book a coffee chat
+            <a href={profile.calcom} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-coffee">
+              <i className="bi bi-calendar-check-fill me-2"></i>Book time with me
             </a>
           </div>
           <Row className="justify-content-center mt-2">

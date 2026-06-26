@@ -7,7 +7,7 @@
   --accent-soft: rgba(255, 255, 255, 0.07);
   --gold: #f5f5f5;
   --gold-soft: rgba(255, 255, 255, 0.06);
-  --text: #f6f6f7;
+  --text: #a3c1e8;
   --text-muted: #8c8c95;
   --border: rgba(255, 255, 255, 0.12);
   --shadow: 0 22px 60px rgba(0, 0, 0, 0.75);
@@ -55,9 +55,9 @@ a {
 .section-eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.22em;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #6cb0ec;
   margin-bottom: 0.6rem;
 }
 
@@ -245,7 +245,7 @@ a {
 }
 
 .hero-tagline {
-  color: var(--text-muted);
+  color: #a3c1e8;
   font-size: 1.05rem;
   max-width: 560px;
   line-height: 1.7;

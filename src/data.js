@@ -28,6 +28,7 @@ export const profile = {
   honour: 'OpenUK 2026 Honour',
   email: 'rahulkrishnanfs@gmail.com',
   calendly: 'https://calendly.com/rahulkrishnanfs',
+  calcom: 'https://cal.com/rahulkrishnanra',
   socials: [
     { icon: 'bi-linkedin', label: 'LinkedIn', url: 'https://www.linkedin.com/in/rahulkrishnanra/' },
     { icon: 'bi-github', label: 'GitHub', url: 'https://github.com/rahulkrishnanfs' },
